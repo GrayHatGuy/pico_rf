@@ -2,8 +2,8 @@
 RP2040 Adafruit/RadioHead clone for RFMx radios
 
 # Issues
-  - Defined rp2040 SPI clock divisors and timings
   - Compile [error output]() - SPI config related.
+  - Defined rp2040 SPI clock divisors and timings
 
 ```  
 // Master clock frequency
