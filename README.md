@@ -1,8 +1,8 @@
 # pico_rf
-RP2040 RadioHead clone for RFM9x 
+RP2040 Adafruit/RadioHead clone for RFMx radios
 
 # Issues
-  - Define rp2040 SPI clock divisors and timings
+  - Defined rp2040 SPI clock divisors and timings
 
 ```  
 // Master clock frequency
@@ -20,3 +20,6 @@ RP2040 RadioHead clone for RFM9x
 #define SCK 18
 
  RH_ASK(uint16_t speed = 12000000, uint8_t rxPin = 19, uint8_t txPin = 16, uint8_t pttPin = 18, bool pttInverted = false);
+
+
+  - Compile [errors]() - SPI bitorder etc.
