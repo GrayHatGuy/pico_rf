@@ -14,13 +14,9 @@ RP2040 Adafruit/RadioHead clone for RFMx radios
 ```
   - Verify constructor RF_ASK() updates default SPI freq and pins.
 
- ```
-//RP2040 SPI_0 bus see Pins_Arduino.h move to RH_ASK.h 
+``` //RP2040 SPI_0 bus see Pins_Arduino.h move to RH_ASK.h 
 #define MISO 16
 #define MOSI 19
 #define SCK 18
 
 RH_ASK(uint16_t speed = 12000000, uint8_t rxPin = 19, uint8_t txPin = 16, uint8_t pttPin = 18, bool pttInverted = false);
-  
- 
-  
