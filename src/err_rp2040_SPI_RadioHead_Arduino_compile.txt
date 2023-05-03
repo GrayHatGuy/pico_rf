@@ -1,0 +1,167 @@
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp: In member function 'virtual void RHHardwareSPI::begin()':
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:84:29: warning: 'void SPIClassRP2040::setDataMode(uint8_t)' is deprecated [-Wdeprecated-declarations]
+   84 |     SPI.setDataMode(dataMode);
+      |                             ^
+In file included from ..\Arduino\libraries\RadioHead/RadioHead.h:731,
+                 from ..\Arduino\libraries\RadioHead/RHGenericSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead/RHHardwareSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:7:
+C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\libraries\SPI\src/SPI.h:60:10: note: declared here
+   60 |     void setDataMode(uint8_t uc_mode) __attribute__((deprecated));
+      |          ^~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:98:21: error: invalid conversion from 'uint8_t' {aka 'unsigned char'} to 'BitOrder' [-fpermissive]
+   98 |     SPI.setBitOrder(bitOrder);
+      |                     ^~~~~~~~
+      |                     |
+      |                     uint8_t {aka unsigned char}
+In file included from ..\Arduino\libraries\RadioHead/RadioHead.h:731,
+                 from ..\Arduino\libraries\RadioHead/RHGenericSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead/RHHardwareSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:7:
+C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\libraries\SPI\src/SPI.h:59:31: note:   initializing argument 1 of 'void SPIClassRP2040::setBitOrder(BitOrder)'
+   59 |     void setBitOrder(BitOrder order) __attribute__((deprecated));
+      |                      ~~~~~~~~~^~~~~
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:98:29: warning: 'void SPIClassRP2040::setBitOrder(BitOrder)' is deprecated [-Wdeprecated-declarations]
+   98 |     SPI.setBitOrder(bitOrder);
+      |                             ^
+In file included from ..\Arduino\libraries\RadioHead/RadioHead.h:731,
+                 from ..\Arduino\libraries\RadioHead/RHGenericSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead/RHHardwareSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:7:
+C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\libraries\SPI\src/SPI.h:59:10: note: declared here
+   59 |     void setBitOrder(BitOrder order) __attribute__((deprecated));
+      |          ^~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:28:27: error: 'VARIANT_MCK' was not declared in this scope
+   28 |  #define SPI_CLOCK_DIV16 (VARIANT_MCK/84000000) // 1MHz
+      |                           ^~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:107:16: note: in expansion of macro 'SPI_CLOCK_DIV16'
+  107 |      divider = SPI_CLOCK_DIV16;
+      |                ^~~~~~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:137:32: warning: 'void SPIClassRP2040::setClockDivider(uint8_t)' is deprecated [-Wdeprecated-declarations]
+  137 |     SPI.setClockDivider(divider);
+      |                                ^
+In file included from ..\Arduino\libraries\RadioHead/RadioHead.h:731,
+                 from ..\Arduino\libraries\RadioHead/RHGenericSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead/RHHardwareSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:7:
+C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\libraries\SPI\src/SPI.h:61:10: note: declared here
+   61 |     void setClockDivider(uint8_t uc_div) __attribute__((deprecated));
+      |          ^~~~~~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:140:32: warning: 'void SPIClassRP2040::setClockDivider(uint8_t)' is deprecated [-Wdeprecated-declarations]
+  140 |     SPI.setClockDivider(divider);
+      |                                ^
+In file included from ..\Arduino\libraries\RadioHead/RadioHead.h:731,
+                 from ..\Arduino\libraries\RadioHead/RHGenericSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead/RHHardwareSPI.h:10,
+                 from ..\Arduino\libraries\RadioHead\RHHardwareSPI.cpp:7:
+C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\libraries\SPI\src/SPI.h:61:10: note: declared here
+   61 |     void setClockDivider(uint8_t uc_div) __attribute__((deprecated));
+      |          ^~~~~~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp: In member function 'void RH_ASK::timerSetup()':
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:302:5: error: 'TCCR1A' was not declared in this scope
+  302 |     TCCR1A = 0; // Output Compare pins disconnected
+      |     ^~~~~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:303:5: error: 'TCCR1B' was not declared in this scope
+  303 |     TCCR1B = _BV(WGM12); // Turn on CTC mode
+      |     ^~~~~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:303:18: error: 'WGM12' was not declared in this scope
+  303 |     TCCR1B = _BV(WGM12); // Turn on CTC mode
+      |                  ^~~~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:303:14: error: '_BV' was not declared in this scope
+  303 |     TCCR1B = _BV(WGM12); // Turn on CTC mode
+      |              ^~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:310:5: error: 'OCR1A' was not declared in this scope
+  310 |     OCR1A = nticks;
+      |     ^~~~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:317:5: error: 'TIMSK' was not declared in this scope
+  317 |     TIMSK |= _BV(OCIE1A);
+      |     ^~~~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:317:18: error: 'OCIE1A' was not declared in this scope
+  317 |     TIMSK |= _BV(OCIE1A);
+      |                  ^~~~~~
+..\Arduino\libraries\RadioHead\RH_ASK.cpp: At global scope:
+..\Arduino\libraries\RadioHead\RH_ASK.cpp:608:4: error: expected constructor, destructor, or type conversion before '(' token
+  608 | ISR(RH_ASK_TIMER_VECTOR)
+      |    ^
+In file included from ..\Arduino\libraries\RadioHead\RH_Serial.cpp:6:
+..\Arduino\libraries\RadioHead/RH_Serial.h:148:29: error: expected ')' before '&' token
+  148 |     RH_Serial(HardwareSerial& serial);
+      |              ~              ^
+      |                             )
+..\Arduino\libraries\RadioHead/RH_Serial.h:152:5: error: reference to 'HardwareSerial' is ambiguous
+  152 |     HardwareSerial& serial();
+      |     ^~~~~~~~~~~~~~
+In file included from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/api/HardwareSerial.h:2,
+                 from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/SerialUSB.h:24,
+                 from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/Arduino.h:117,
+                 from ..\Arduino\libraries\RadioHead/RadioHead.h:724,
+                 from ..\Arduino\libraries\RadioHead/RHGenericDriver.h:9,
+                 from ..\Arduino\libraries\RadioHead/RH_Serial.h:12,
+                 from ..\Arduino\libraries\RadioHead\RH_Serial.cpp:6:
+c:\users\jruss\appdata\local\arduino15\packages\rp2040\hardware\rp2040\3.1.1\arduinocore-api\api\hardwareserial.h:87:7: note: candidates are: 'class arduino::HardwareSerial'
+   87 | class HardwareSerial : public Stream
+      |       ^~~~~~~~~~~~~~
+In file included from ..\Arduino\libraries\RadioHead\RH_Serial.cpp:6:
+..\Arduino\libraries\RadioHead/RH_Serial.h:40:7: note:                 'class HardwareSerial'
+   40 | class HardwareSerial;
+      |       ^~~~~~~~~~~~~~
+..\Arduino\libraries\RadioHead/RH_Serial.h:230:5: error: reference to 'HardwareSerial' is ambiguous
+  230 |     HardwareSerial& _serial;
+      |     ^~~~~~~~~~~~~~
+In file included from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/api/HardwareSerial.h:2,
+                 from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/SerialUSB.h:24,
+                 from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/Arduino.h:117,
+                 from ..\Arduino\libraries\RadioHead/RadioHead.h:724,
+                 from ..\Arduino\libraries\RadioHead/RHGenericDriver.h:9,
+                 from ..\Arduino\libraries\RadioHead/RH_Serial.h:12,
+                 from ..\Arduino\libraries\RadioHead\RH_Serial.cpp:6:
+c:\users\jruss\appdata\local\arduino15\packages\rp2040\hardware\rp2040\3.1.1\arduinocore-api\api\hardwareserial.h:87:7: note: candidates are: 'class arduino::HardwareSerial'
+   87 | class HardwareSerial : public Stream
+      |       ^~~~~~~~~~~~~~
+In file included from ..\Arduino\libraries\RadioHead\RH_Serial.cpp:6:
+..\Arduino\libraries\RadioHead/RH_Serial.h:40:7: note:                 'class HardwareSerial'
+   40 | class HardwareSerial;
+      |       ^~~~~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RH_Serial.cpp:13:21: error: expected constructor, destructor, or type conversion before '(' token
+   13 | RH_Serial::RH_Serial(HardwareSerial& serial)
+      |                     ^
+..\Arduino\libraries\RadioHead\RH_Serial.cpp:20:1: error: reference to 'HardwareSerial' is ambiguous
+   20 | HardwareSerial& RH_Serial::serial()
+      | ^~~~~~~~~~~~~~
+In file included from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/api/HardwareSerial.h:2,
+                 from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/SerialUSB.h:24,
+                 from C:\Users\jruss\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\3.1.1\cores\rp2040/Arduino.h:117,
+                 from ..\Arduino\libraries\RadioHead/RadioHead.h:724,
+                 from ..\Arduino\libraries\RadioHead/RHGenericDriver.h:9,
+                 from ..\Arduino\libraries\RadioHead/RH_Serial.h:12,
+                 from ..\Arduino\libraries\RadioHead\RH_Serial.cpp:6:
+c:\users\jruss\appdata\local\arduino15\packages\rp2040\hardware\rp2040\3.1.1\arduinocore-api\api\hardwareserial.h:87:7: note: candidates are: 'class arduino::HardwareSerial'
+   87 | class HardwareSerial : public Stream
+      |       ^~~~~~~~~~~~~~
+In file included from ..\Arduino\libraries\RadioHead\RH_Serial.cpp:6:
+..\Arduino\libraries\RadioHead/RH_Serial.h:40:7: note:                 'class HardwareSerial'
+   40 | class HardwareSerial;
+      |       ^~~~~~~~~~~~~~
+..\Arduino\libraries\RadioHead\RH_Serial.cpp: In member function 'virtual bool RH_Serial::available()':
+..\Arduino\libraries\RadioHead\RH_Serial.cpp:36:27: error: '_serial' was not declared in this scope; did you mean 'Serial'?
+   36 |     while (!_rxBufValid &&_serial.available())
+      |                           ^~~~~~~
+      |                           Serial
+..\Arduino\libraries\RadioHead\RH_Serial.cpp: In member function 'virtual bool RH_Serial::send(const uint8_t*, uint8_t)':
+..\Arduino\libraries\RadioHead\RH_Serial.cpp:204:5: error: '_serial' was not declared in this scope; did you mean 'Serial'?
+  204 |     _serial.write(DLE); // Not in FCS
+      |     ^~~~~~~
+      |     Serial
+..\Arduino\libraries\RadioHead\RH_Serial.cpp: In member function 'void RH_Serial::txData(uint8_t)':
+..\Arduino\libraries\RadioHead\RH_Serial.cpp:229:2: error: '_serial' was not declared in this scope; did you mean 'Serial'?
+  229 |  _serial.write(DLE); // Not in FCS
+      |  ^~~~~~~
+      |  Serial
+..\Arduino\libraries\RadioHead\RH_Serial.cpp:230:5: error: '_serial' was not declared in this scope; did you mean 'Serial'?
+  230 |     _serial.write(ch);
+      |     ^~~~~~~
+      |     Serial
+
+exit status 1
+
+Compilation error: exit status 1
