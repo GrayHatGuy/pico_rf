@@ -4,6 +4,7 @@ RP2040 Adafruit/RadioHead clone for RFMx radios
 # Issues
   - Compile [error output]() - SPI config related.
   - Defined rp2040 SPI clock divisors and timings
+  - Check [clk and osc divisors](https://github.com/dragino/RadioHead/blob/master/RHHardwareSPI.cpp)
 
 ```  
 // Master clock frequency
